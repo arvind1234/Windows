@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="TicTacToe.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TicTacToe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="button1" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="0" Grid.Column="0" Click="gameButtonClick" local:TicTacToeButtonData.X="0" local:TicTacToeButtonData.Y="0"/>
+        <Button x:Name="button2" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="0" Grid.Column="1" Click="gameButtonClick" local:TicTacToeButtonData.X="0" local:TicTacToeButtonData.Y="1"/>
+        <Button x:Name="button3" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="0" Grid.Column="2" Click="gameButtonClick" local:TicTacToeButtonData.X="0" local:TicTacToeButtonData.Y="2"/>
+
+        <Button x:Name="button4" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="1" Grid.Column="0" Click="gameButtonClick" local:TicTacToeButtonData.X="1" local:TicTacToeButtonData.Y="0"/>
+        <Button x:Name="button5" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="1" Grid.Column="1" Click="gameButtonClick" local:TicTacToeButtonData.X="1" local:TicTacToeButtonData.Y="1"/>
+        <Button x:Name="button6" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="1" Grid.Column="2" Click="gameButtonClick" local:TicTacToeButtonData.X="1" local:TicTacToeButtonData.Y="2"/>
+
+        <Button x:Name="button7" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="2" Grid.Column="0" Click="gameButtonClick" local:TicTacToeButtonData.X="2" local:TicTacToeButtonData.Y="0"/>
+        <Button x:Name="button8" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="2" Grid.Column="1" Click="gameButtonClick" local:TicTacToeButtonData.X="2" local:TicTacToeButtonData.Y="1"/>
+        <Button x:Name="button9" Content="-" HorizontalAlignment="Center" Width="70" Height="70" Grid.Row="2" Grid.Column="2" Click="gameButtonClick" local:TicTacToeButtonData.X="2" local:TicTacToeButtonData.Y="2"/>
+
+        <Button x:Name="reset" Content="Reset" HorizontalAlignment="Center" Height="70" Grid.Row="3" Grid.Column="1" Padding="10,10" Width="210" Click="resetClick"/>
+    </Grid>
+</Page>
